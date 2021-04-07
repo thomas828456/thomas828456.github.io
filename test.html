@@ -1,16 +1,44 @@
-<div class="carte">
-    <a href="">
-        <div class="carte__img">
-    
-        </div>
-        <div class="carte__block_titre">
-            <div class="carte__block_titre_nom">
-    
+<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        
+    <a href=info.html?id='+response[i]._id+' class="">
+    <div class="card bg-light border-primary">
+        <div class="row g-0">
+            <div class="col-4">
+                <img class="img-fluid" src='+response[i].imageUrl+' alt="'+response[i].name+'">
             </div>
-            <div class="carte__block_titre__prix">
-    
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title">'+response[i].name+'</h5>
+                    <h6 class="card-subtitle">'+priceFormatter+'</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+
+<input type="radio" name="color" value="response[i].color[j]" id="response[i].color[j]"/>
+<label for="response[i].color[j]">response[i].color[j]</label><br/>
+
+
+<div class="col-12 col-md-6 col-lg-4">
+    <a href=info.html?id='+id+'>
+        <div class="row">
+            <div class="col-4">
+                <img class="imgM" src='+response[j].imageUrl+' alt="'+response[j].name+'">
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <span>'+color+'" "'+'</span>
+                    <span>'+response[j].name+'</span>
+                </div>
+                <div class="row">
+                    <span>'+localStorage(i)+'</span>
+                    <span>'+response[j].price+'</span>
+                </div>
             </div>
         </div>
     </a>
 </div>
 
+'<div class="carte col-6 col-md-4 col-lg-3 col-xl-2"><a href=info.html?id='+response[i]._id+'><div class="carte__img row"><img class="img-fluid" src='+response[i].imageUrl+' alt="'+response[i].name+'"></div><div class="carte__block_titre row"><div class="carte__block_titre_nom col-6"><span>'+response[i].name+'</span></div><div class="carte__block_titre__prix col-6"><span>'+priceFormatter+'</span></div></div></a></div>'

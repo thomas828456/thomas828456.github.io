@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="logo">
-                <h1>Orinoco</h1>                
+                <h1>Orinoco</h1>
             </div>
             <nav class="navbar navbar-expand bg-dark">
                 <ul class="navbar-nav">
@@ -25,37 +25,40 @@
         </header>
         <main class="container">
             <div class="row">
-                <div class="col-12 col-xl-6">
-                    <div class="row" id="grit">
-                        <h2 id="name" class="col-6"></h2>
-                        <h2 id="price" class="col-6"></h2>
-                    </div>
-                    <div id="personnalisation">
-                        <h3>Choix de la couleur :</h3>
-                        <div id="radio">
-                            
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div id="append">
+        
                         </div>
                     </div>
-                    <h3 id="descriptiontitle">Description :</h3>
-                    <p id="description"></p>
-                </div>
-                <div class="col-12 col-xl-6">
-                    <div id="img">
-        
+                    <div>
+                        <div id="totalPrice" class="alert bg-warning" role="alert">
+    
+                        </div>
                     </div>
+                    <section>
+                        <button id="vider" class="col btn btn-secondary mx-auto">Vider le panier</button>
+                    </section>
                 </div>
-            </div>
+                <aside class="col-xs-12 col-lg-4">
+                    <label for="lastName">Nom de famille</label><br/>
+                    <input type="text" name="lastName" id="lastName" class="form-control" pattern="[a-zA-Z-]{0,}" placeholder="Durand"/><br/>
+                    <label for="firstName">Prénom</label><br/>
+                    <input type="text" name="firstName" id="firstName" class="form-control" pattern="[a-zA-Z-]{0,}" placeholder="Marc"/><br/>
+                    <label for="address">Adresse</label><br/>
+                    <textarea name="address" id="address" class="form-control" pattern="[a-zA-Z0-9-]{0,}" placeholder="34 place de la République"></textarea><br/>
+                    <label for="city">Ville</label><br/>
+                    <input type="text" name="city" id="city" class="form-control" pattern="[a-zA-Z-]{0,}" placeholder="Paris"/><br/>
+                    <label for="email">Adresse électronique</label><br/>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="marc.durand@laposte.net"/>    
+                </aside>
+            </div>            
         </main>
         <section class="container">
-            <div class="row">
-                <div class="col-12 col-l-3" id="grit2">
-                    <label for="number">Choix de la quantité :</label>
-                    <input type="number" value="1" min="1" max="99" id="number"/>                    
-                </div>
-                <button id="button" class="col-10 col-l-7 btn-success">Ajouter au panier</button>                
-            </div>
+            <button id="valider" class="col btn btn-primary">Confirmer et Payer le Panier</button>
         </section>
-        <script src="info.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->       
+        <script src="panier.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

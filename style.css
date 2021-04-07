@@ -1,0 +1,72 @@
+.imgM{
+    height: 100px;
+    object-fit: cover;
+    padding:10px;
+}
+.card-body{
+    background-color: white;
+    height: 100%;
+    border-radius: 0 .4rem .4rem 0;
+}
+.card{
+    margin-top: 20px;
+    max-height: 200px;
+}
+.logo h1{
+    margin-left: 40px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: coral;
+}
+.logo{
+    background-color: black;
+    padding: 20px;
+}
+#valider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.alert{
+    color:blueviolet;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+#grit{
+    background-color: rgb(96, 194, 226);
+}
+#name,#price,#personnalisation,#descriptiontitle{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#grit2{
+    background-color: lightblue;
+    padding: 20px;
+}
+#button{
+    margin: 20px auto 20px auto;
+}
+.imgL{
+    width: 100%;
+    object-fit: cover;
+}
+#frip{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#frip2,#frip3{
+    margin-left: 10px;
+}
+#blop{
+    background-color: lightblue;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: lightcoral;
+    text-shadow: black;
+    padding: 20px;
+}
